@@ -144,7 +144,7 @@ def escribeReporte(archivo_xml,reporte, elementos):
 def escribeCSV(archivo, hosts):
     with open(archivo+'.csv','w') as fl:
         for host in hosts:
-            fl.write(str(host) + '\n')
+            fl.write(str(host))
 
 if __name__ == '__main__':
     if len(sys.argv) != 3:
